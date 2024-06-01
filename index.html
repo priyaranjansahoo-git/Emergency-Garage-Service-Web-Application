@@ -1,26 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-   
+    <title>USwiftSOS</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="/login" method="POST">
-            <div class="input-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+    <!-----------NAV BAR----------->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SwiftSOS</h1>
             </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu-items">
+                <li><a href="#content">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#footer-links">Contact</a></li>
+                <li><a href="" class="signup">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------------HOME------------------------>
+    <div class="content" id="content">
+        <div class="map">
+            <!-- Map placeholder -->
+            <img src="map.png" alt="Map">
+        </div>
+        <div class="details">
+            <h2>Instant Emergency Garage Services</h2>
+            <ul>
+                <li><img src="carIcon.png" alt="Car" height="50" width="50"> </li>
+                <li><img src="bikeIcon.png" alt="Bike" height="50" width="50"></li>
+                <li><img src="scooterIcon.png" alt="Scooter"height="50" width="50"></li>
+            </ul>
+            <button>Help</button>
+        </div>
     </div>
+    <!---------------------About----------------->
+    <div class="about" id="about">
+        <div class="paragraph">
+         <h2>About Us</h2>
+         <p>At SwiftSOS, we're more than just a garage service. We're your reliable partner in times of vehicle emergencies, offering swift and professional assistance when you need it most. Our team of highly trained technicians is dedicated to providing you with the best service possible, ensuring that your vehicle is back on the road in no time.With our 24/7 emergency garage services, you can rest assured that help is always just a phone call away. Whether you're dealing with a flat tire, a dead battery, or any other vehicle-related issue, our team is here to help. We pride ourselves on our quick response times and our ability to handle any situation with ease and efficiency.</p>
+         <p>But we're not just about fixing cars. We're also committed to providing you with the best customer experience possible. From our friendly customer service team to our transparent pricing policy, we strive to make your experience with us as smooth and hassle-free as possible. At SwiftSOS, we understand that your vehicle is more than just a mode of transportation. It's a part of your life, and we're here to help you keep it running smoothly. So the next time you find yourself in need of emergency garage services, don't hesitate to give us a call. We'll be there for you, every step of the way."</p>
+        </div>
+        <div class="img1">
+            <img src="pic1.png" alt="about img" height="500" width="400">
+        </div>
+    </div>  
+    <!----------------------Service------------------------>
+    <div class="service" id="service">  
+        <div class="img2">
+            <img src="pic2.png" alt="service img">
+        </div>
+        <div class="options">
+         <h2>Our Services</h2>
+         <ul>
+            <li><b>Emergency Roadside Assistance: </b>Immediate help for flat tires, dead batteries, and lockouts.
+                </li>
+            <li><b>Vehicle Diagnostics: </b>Professional diagnostics to identify and fix mechanical issues.</li>
+            <li><b>Towing Services:</b> Safe and reliable towing for vehicles in need of repair.</li>
+           <li><b>Emergency Fuel Delivery:</b> Delivery of fuel if you run out unexpectedly.</li>
+           <li><b>Jump Starts:</b> Quick jump-start services for vehicles with dead batteries.</li>
+           <li><b>Tire Changes:</b> Assistance with changing flat tires and getting you back on the road.</li>
+           <li><b>Locksmith Services:</b> Help with lockouts and lost keys.</li>
+           <li><b>Fluid Delivery:</b> Delivery of essential fluids such as coolant or oil.</li>
+           <li><b>Minor Repairs:</b> On-the-spot repairs for minor mechanical issues.</li>
+           <li><b>Battery Replacement:</b> Replacement of dead or faulty batteries.</li>
+         </ul>
+        </div>
+    </div>
+    <!--------------------Contact----------------------------->
+    <footer>
+        <div class="footer-links" id="footer-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="">Newsroom</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/suraj.kusahoo.56"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/SurajKrSahoo"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/suraj_kr.000/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <br>
+        <div class="store-links">
+            <a href="#"><img src="appstore.png" alt="App Store"></a>
+            <a href="#"><img src="playstore.png" alt="Google Play"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 SwiftSOS Inc.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
